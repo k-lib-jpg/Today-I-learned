@@ -1,11 +1,7 @@
 #クラス・継承
  クラスとは、共通の型を持つデータの分類のこと。
  オブジェクトというのは、クラスの中にある実体のこと。
- 書き方としては、例えば以下のようになる
- class Person:
-     def __init__(self, name, age):
-         self.name = name
-         self.age = age
+ 書き方としては、classファイルに記入。
  
  
  kirishima = Person("Kirishima", 15)

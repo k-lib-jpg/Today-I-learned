@@ -1,0 +1,19 @@
+const Example = () => {
+  // 練習用
+  //変数の後に「:型名」が入る！
+  let str: string = "Hello"
+  str = "Bye";
+  console.log(str);
+
+  let num: number = 1;
+  num = 2;
+  console.log(num);
+
+  let bignum: bigint = 102n;
+  bignum = 1000n;
+  console.log(bignum);
+
+  let bool: boolean = true;
+  console.log(bool);
+
+};

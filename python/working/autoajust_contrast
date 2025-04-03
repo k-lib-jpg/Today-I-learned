@@ -40,7 +40,7 @@ for filename in os.listsdir(folder_path):
         #処理した画像のカウンターを増やす
         process_count += 1
 
-        #指定した枚数を処理したら終了
+        #指定した枚数を処理したら終了。指定枚数に達したら終了というのは自分が加えた部分。これがないとプログラムが止まらなくなる。
         if process_count >= num_images_to_process:
             break
 

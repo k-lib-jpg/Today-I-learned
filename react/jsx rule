@@ -1,0 +1,23 @@
+#jsxとはreact特有のタグ内の記法である
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+
+#Appアロー関数内にあるh1タグとpタグ内がある。このような記法をjsxといい、タグ内のワードが表示される
+#<></>で囲まなければならないというルールがある
+const App = () => {
+  return (
+    <>
+      <h1>こんにちわ</h1>
+      <p>お元気ですか</p>
+    </>
+  );
+};
+
+const rootElement = document.getElementById('root');
+const root = createRoot(rootElement);
+
+root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);

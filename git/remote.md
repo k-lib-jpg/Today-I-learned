@@ -20,3 +20,15 @@ git pull orogin master
 上記の省略版
 git pull
 
+なおpullとfetchの違いは、現在のブランチをマージするかしないか。pullの時は、現在のブランチを統合するので、その点は注意する。
+
+#リモートの変更と削除
+
+変更
+
+git remote rename （旧リモート名） （新リモート名）
+
+削除
+
+git remote rm （リモート名）
+

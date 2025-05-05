@@ -1,4 +1,5 @@
 /* stdio.hというファイルをincludeという疑似命令で使用する */
+/* 実行結果としては、Hello world */
 #include <stdio.h>
 
 int main(void)

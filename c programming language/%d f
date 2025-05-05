@@ -1,0 +1,27 @@
+/* %dを使用し、数字を数値として出力する */
+#include <stdio.h>
+
+int main(void)
+{
+	printf("%d円\n", 200);
+	return 0;
+}
+
+/* %fを使用し、実数を計算する */
+/* %dの場合、出力は3となる */
+#include <stdio.h>
+
+int main(void)
+{
+	printf("%d\n", 10/3);
+	return 0;
+}
+
+/* %fの場合、出力は3.3333.....となる */
+#include <stdio.h>
+
+int main(void)
+{
+	printf("%d\n", 10.0 / 3.0 );
+	return 0;
+}

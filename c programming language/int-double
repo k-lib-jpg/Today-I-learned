@@ -1,0 +1,13 @@
+/* 整数の時はintを使い、実数の時はdoubleを使う */
+/* %dには、後ろの整数が入る */
+int main(void)
+{
+
+	int a = 10000, b = 500, c = 0;
+	
+	printf("Aは%dです。\n",a);
+  printf("Bは%dです。\n",b);
+  printf("Cは%dです。\n",c);
+	
+	return 0;
+}

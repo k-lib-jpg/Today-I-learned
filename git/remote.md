@@ -32,3 +32,9 @@ git remote rename （旧リモート名） （新リモート名）
 
 git remote rm （リモート名）
 
+#プルのリベース型
+
+git pull --rebase （リモート名）（ブランチ名）
+git pull --rebase origin master
+
+

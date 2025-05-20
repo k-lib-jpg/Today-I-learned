@@ -1,0 +1,21 @@
+/* 演算子 */
+#include <stdio.h>
+
+int main(void)
+{
+	int num;
+	scanf("%d",&num);
+	if (num == 10) printf("入力値は10です。\n");
+　if (num != 10) printf("入力値は10ではありません。\n");
+	return 0;
+}
+
+int main(void)
+{
+	int num;
+	scanf("%d",&num);
+	if (num == 10) printf("入力値は10です。\n");
+　if (num > 10) printf("入力値は10より大きいです。\n");
+　if (num < 10) printf("入力値は10より小さいです。\n");
+	return 0;
+}

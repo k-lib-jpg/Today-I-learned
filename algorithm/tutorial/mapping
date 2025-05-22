@@ -1,0 +1,12 @@
+#度数分布（ヒストグラム）
+
+a = [35, 25, 56, 78, 43, 66, 71, 72, 80, 90, 0,
+    73, 35, 65, 100, 78, 80, 85, 35, 50]
+his = [0 for i in range(11)]
+
+for ai in a:
+    rank = ai // 10
+    if 0 <= rank and rank <= 10:
+        his [rank] += 1
+for i in range(0, 11):
+    print('{:3d} - :{:3d}'.format(i*10, his[i]))

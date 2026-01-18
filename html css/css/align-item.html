@@ -1,0 +1,35 @@
+<!-- flexboxとは複雑なレイアウトも簡単に組めるCSSレイアウトモジュール -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox入門</title>
+  <style>
+    .container {
+      display: flex;
+      height: 100vh;
+      /* align-items: stretch; */
+      /* align-items: flex-start; */
+      /* align-items: flex-end; */
+      /* align-items: center; */
+      align-items: baseline;
+    }
+    .item {
+      background-color: #ffa61c;
+      margin: 10px;
+      padding: 20px;
+    }
+    .lg {
+      font-size: x-large;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">item01</div>
+    <div class="item lg">item02</div>
+    <div class="item">item03</div>
+  </div>
+</body>
+</html>

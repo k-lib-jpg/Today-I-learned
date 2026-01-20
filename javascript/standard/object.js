@@ -1,4 +1,4 @@
-#greetの部分をメソッドという
+/greetの部分をメソッドという
 const person = {
     name: "William",
     age: 30,

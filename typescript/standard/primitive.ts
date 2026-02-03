@@ -1,6 +1,4 @@
-const Example = () => {
-  // 練習用
-  //変数の後に「:型名」が入る！
+ //変数の後に「:型名」が入る！
 
   //string型
   let str: string = "Hello"
@@ -45,5 +43,3 @@ const Example = () => {
 　//null型、undefined型
 　let n: null = null;
 　let u: undefined = undefined;
-
-};

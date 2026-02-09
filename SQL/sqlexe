@@ -1,0 +1,3 @@
+& "C:\Program Files\PostgreSQL\18\bin\psql.exe" -U postgres
+パスワード入力　
+テストでselect 1;

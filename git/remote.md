@@ -6,7 +6,8 @@ git remote -v
 #リモートリポジトリの内容を追加する（リモートリポジトリを複数登録したいとき使う。下はtutorialというショートカット名でリモートリポジトリを登録する）
 
 git remote add （リモート名）
-git remote add tutorial (guthubのURL)
+git remote add  （つけたい名前）　(guthubのURL)
+→git remote （つけたい名前）で状態を確認できる
 
 #リモートから情報を取得する（フェッチ）
 

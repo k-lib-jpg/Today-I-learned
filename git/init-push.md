@@ -68,4 +68,4 @@ git remote add origin （githubのURL）
 #githubにプッシュする（プッシュする際、ユーザー名とパスワードが求められる）
 
 git push （リモート名）（ブランチ名）
-git push origin master 
+git push origin main

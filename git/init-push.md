@@ -65,7 +65,8 @@ git mv （旧ファイル）（新ファイル）
 
 git remote add origin （githubのURL）
 
-#githubにプッシュする（プッシュする際、ユーザー名とパスワードが求められる）
+#githubにプッシュする（プッシュする際、ユーザー名とパスワードが求められる。-uをつけることで次回以降git pushだけでpushできる）
 
 git push （リモート名）（ブランチ名）
 git push origin main
+git push -u origin main 

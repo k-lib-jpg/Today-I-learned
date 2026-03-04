@@ -1,0 +1,5 @@
+npm install -D tailwindcss @tailwindcss/cli
+npx tailwindcss init
+srcフォルダを作成し、直下にinput.cssを作成する
+@import "tailwindcss";をinput.cssに貼り付ける
+npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch

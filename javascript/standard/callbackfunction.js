@@ -1,10 +1,9 @@
+// 引数として渡される関数のことをコールバック関数と呼ぶ。 一方、コールバック関数を引数として使う関数やメソッドのことを高階関数と呼ぶ。
 function print(callback) {
   console.log(callback);
   const result = callback();
   console.log(result);
 }
-//ƒ fn(number = 3) {return number * 2}
-//6
 
 function fn(number = 3) {
   return number * 2

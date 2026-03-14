@@ -9,7 +9,7 @@ git remote add （リモート名）
 git remote add  （つけたい名前）　(guthubのURL)
 →git remote （つけたい名前）で状態を確認できる
 
-#リモートから情報を取得する（フェッチ）
+#リモートから情報を取得する（フェッチ　なおワークツリーにマージまではされない）
 
 git fetch （リモート名）
 git fetch origin

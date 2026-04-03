@@ -1,0 +1,7 @@
+管理者ユーザーが使用
+
+システムの電源を切る
+systemctl poweroff
+
+システムを再起動する
+systemctl reboot

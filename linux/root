@@ -8,4 +8,4 @@ su -
 exit
 
 suコマンドを使用できないとき
-sudo -
+sudo

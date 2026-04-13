@@ -1,0 +1,34 @@
+// Intersection型 複数の型を1つに結合し、既存の型をまとめた単一の型を取得できる。＆（アンパサンド）を使って型定義を連結する。
+type Dog = {
+  tail: Tail
+  bark: () => void
+}
+
+type Bird = {
+  wing: Wing
+  fly: () => void
+}
+
+type Kimera = Dog & Bird
+
+// Union型 複数の型をうち1つの型を成立するもの。|（パイプ）を使って型定義を連結する。
+let value: boolean|number|string
+value =false;
+value =1;
+value ='2';
+
+
+// Literal型 stringで文字定義するのではなく、文字列リテラルを使用すると、文字列に必要な正確な値を指定できる。
+
+
+
+// typeof typeofを使うことで、宣言済みの変数の型を使って別の変数で再宣言できる。
+
+
+
+// keyof 指定のプロパティ名称のいずれかで定義されているもの。
+
+
+
+// アサーション 値の型について把握している場合、<>やasを使用して、ダウンキャスト（例：any型からstring型に型付けする）する。
+

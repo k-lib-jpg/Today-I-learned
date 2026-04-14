@@ -13,20 +13,35 @@ type Kimera = Dog & Bird
 
 // Union型 複数の型をうち1つの型を成立するもの。|（パイプ）を使って型定義を連結する。
 let value: boolean|number|string
-value =false;
-value =1;
-value ='2';
+value =false
+value =1
+value ='2'
 
 
 // Literal型 stringで文字定義するのではなく、文字列リテラルを使用すると、文字列に必要な正確な値を指定できる。
+let myName: 'Taro'
+myName = 'Taro'
+　// 定数のようにも扱える
+　let users: 'Taro':'Jiro':'Hanako'
+  users = 'Taro'
 
 
 
 // typeof typeofを使うことで、宣言済みの変数の型を使って別の変数で再宣言できる。
+let myObject = { foo: 'foo'}
+let anotherObject =: typeof myObject = { foo: ''}
+anotherObject['foo'] = 'value'
 
 
 
 // keyof 指定のプロパティ名称のいずれかで定義されているもの。
+type SomeType = {
+  foo: string
+  bar: string
+  baz: string
+}
+     let someKey: "foo" | "bar" | "baz"
+  let someKey: keyof SomeType
 
 
 

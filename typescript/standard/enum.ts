@@ -1,6 +1,6 @@
 //数値や文字列をenumを使うことでまとめることができる
 
-#数値列挙
+#数値列挙 enunm + 関数
 enum Direction {
  Up,    //(enum member) Direction.Up = 0
  Down,  //(enum member) Direction.Down = 1

@@ -46,4 +46,8 @@ type SomeType = {
 
 
 // アサーション 値の型について把握している場合、<>やasを使用して、ダウンキャスト（例：any型からstring型に型付けする）する。
-
+let someValue: any = "this is a string";
+let strLength: number = (<string>someValue).length;
+// asを使うやり方もある
+let someValue: any = "this is a string";
+let strLength: number = (someValue as string).length;

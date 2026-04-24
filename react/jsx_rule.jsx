@@ -3,7 +3,7 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
 #Appアロー関数内にあるh1タグとpタグ内がある。このような記法をjsxといい、タグ内のワードが表示される
-#<></>で囲まなければならないというルールがある
+#<></>で囲まなければならないというルールがある（divタグでもいい）
 #タグ内はjs形式で{}に入力しなければいけない
 const App = () => {
  const onClickButton = () => alert();

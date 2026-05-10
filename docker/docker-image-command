@@ -4,5 +4,5 @@ docker image pull {イメージ名｝
 #ローカルマシーンに存在するイメージ一覧を表示するコマンド
 docker iamge ls
   
-#イメージを削除するコマンド
+#イメージを削除するコマンド（イメージ名をverごと書かないと、latestを探すようになる)
 docker image rm {イメージ名｝

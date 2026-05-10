@@ -5,4 +5,4 @@ docker image pull {イメージ名｝
 docker iamge ls
   
 #イメージを削除するコマンド（イメージ名をverごと書かないと、latestを探すようになる)
-docker image rm {イメージ名｝
+docker image rm {イメージ名もしくはイメージID｝

@@ -14,3 +14,10 @@ docker container restart { コンテナ名 }
 
 コンテナを破棄する
 docker container rm { コンテナ名 }
+
+#その他
+イメージの詳細情報を表示するコマンド
+docker image inspect {イメージ名}
+
+コンテナを起動して任意のコマンドを実行させるコマンド
+docker container run {イメージ名} {実行したいコマンド名}

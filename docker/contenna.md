@@ -33,3 +33,12 @@ docker image inspect {イメージ名}
 
 コンテナを起動して任意のコマンドを実行させるコマンド
 docker container run {イメージ名} {実行したいコマンド名}
+
+コンテナに好き名前をつける
+docker container run --name {つけたい名前｝
+
+停止済みのコンテナを一括削除する
+docker container prune
+
+起動した後に削除する（upの状態のものは削除できない）
+docker conatiner run --rm

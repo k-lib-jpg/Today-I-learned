@@ -4,3 +4,4 @@
 
 #dockerfileコマンド
 docker image build {ディレクトリパス}
+→カレントディレクトリだと.

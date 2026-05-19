@@ -6,3 +6,6 @@ docker iamge ls
   
 #イメージを削除するコマンド（イメージ名をverごと書かないと、latestを探すようになる)
 docker image rm {イメージ名もしくはイメージID｝
+
+#dockerのイメージの変更差分として保存されたレイヤーを確認できる
+docker image history {イメージ名もしくはイメージID｝

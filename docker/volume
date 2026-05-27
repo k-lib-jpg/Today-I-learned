@@ -1,0 +1,13 @@
+#volumeとはコンテナのデータをコンテナ外部に保存し、永続的に使用する仕組みのこと
+
+#新しいボリューム領域を作成する
+docker volume create {ボリューム名}
+
+#ボリューム領域一覧を表示する
+docker volume ls
+
+#指定したボリューム領域の詳細情報を表示する
+docker volume inspect {ボリューム名}
+
+#指定したボリューム領域を削除する
+docker volume rm {ボリューム名}

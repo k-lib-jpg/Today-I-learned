@@ -1,0 +1,14 @@
+#dockerネットワーク
+dockerネットワークとは、コンテナ同士の通信を簡単にしたり、不要なコンテナ同士の通信を防ぐために隔離する機能
+
+#ネットワークの一覧を表示する
+docker network ls
+
+#ネットワークの詳細情報を表示する
+docker network inspect {ネットワーク}
+
+#新しいネットワークを作成する
+docker network create {ネットワーク}
+
+$指定したネットワークに接続したコンテナを起動する
+docker container run --network {ネットワーク} ｛イメージ}

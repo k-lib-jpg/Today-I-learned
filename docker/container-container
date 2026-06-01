@@ -12,3 +12,9 @@ docker network create {ネットワーク}
 
 $指定したネットワークに接続したコンテナを起動する
 docker container run --network {ネットワーク} ｛イメージ}
+
+#ブリッジネットワークとは
+コンテナ同士を結び付け、自分の任意の設定で通信をすることができる
+
+#ネットワークの削除
+docker network rm {ネットワーク}

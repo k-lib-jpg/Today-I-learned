@@ -1,5 +1,6 @@
-#useEffectとは依存配列に記述された関数が変わるたびに、useEffect内の処理を再レンダリングする手続きのこと
-#App.jsx
+//useEffectとは依存配列に記述された関数が変わるたびに、useEffect内の処理を再レンダリングする手続きのこと。
+//useStateなどで管理している状態が変わったことをきっかけに、別の処理（API通信やタイマーのセットアップなどのreactの外と連携するとき）を走らせたい場合に使う。
+//App.jsx
 import { useEffect, useState } from 'react';
 import { ColorfulMessage } from './component/colorfulMessage';
 
@@ -36,7 +37,7 @@ export const App = () => {
   );
 };
 
-#main.jsx
+//main.jsx
 import { createRoot } from 'react-dom/client';
 import { App } from './App';
 

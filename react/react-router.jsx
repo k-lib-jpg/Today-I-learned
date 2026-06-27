@@ -1,4 +1,4 @@
-// main.tsx
+// main.jsx
 import { BrowserRouter } from 'react-router'
 
 createRoot(document.getElementById('root')!).render(
@@ -7,16 +7,26 @@ createRoot(document.getElementById('root')!).render(
   </BrowserRouter>
 )
 
-// App.tsx
-import { Routes, Route } from 'react-router'
+// App.jsx
+import React from 'react';
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 
-function App() {
+import Top from './components/Top';
+import Login from './components/Login';
+import TodoList from './components/TodoList';
+
+const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/users" element={<Users />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
-  )
-}
+    <BrowserRouter>
+      <Switch>
+        <Route exact path='/' component={Top} />
+        <Route path='/login' component={Login} />
+        <Route path='/todo' component={TodoList} />
+      </Switch>
+      <Link to='/'>Back To Top</Link>
+    </BrowserRouter>
+  );
+};
+
+export default App;
+

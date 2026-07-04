@@ -1,3 +1,9 @@
+//react routerとはページ遷移時にHTMLをサーバーから再び取得することなく、Javascriptで処理することで、ページ読み込みを早くする技術
+
+//セットアップ
+npm install react-router
+
+//例
 // main.jsx
 import { BrowserRouter } from 'react-router'
 

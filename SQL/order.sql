@@ -1,0 +1,2 @@
+SELECT 列名1, 列名2 FROM テーブル名
+ORDER BY 列名1 DESC/ASC; 

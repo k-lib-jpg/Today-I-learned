@@ -18,6 +18,8 @@ import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
 import { Home } from './Home';
 import { Page1 } from './Page1';
 import { Page2 } from './Page2';
+import { Page1DetailA } from './Page1DetailA';
+import { Page1DetailB } from './Page1DetailB';
 
 function App() {
   return (
@@ -32,9 +34,20 @@ function App() {
 
       {/* Switch から Routes に変更 */}
       <Routes>
-        {/* v6 では element={...} という属性の中にコンポーネントを書きます */}
         <Route exact path="/" element={<Home />} />
-        <Route path="/page1" element={<Page1 />} />
+        <Route
+          path="/page1/*"
+          element={
+            <Routes>
+              {/* /page1 のとき */}
+              <Route path="/" element={<Page1 />} />
+              {/* /page1/detailA のとき */}
+              <Route path="/detailA" element={<Page1DetailA />} />
+              {/* /page1/detailB のとき */}
+              <Route path="/detailB" element={<Page1DetailB />} />
+            </Routes>
+          }
+        />
         <Route path="/page2" element={<Page2 />} />
       </Routes>
     </BrowserRouter>
@@ -42,5 +55,6 @@ function App() {
 }
 
 export default App;
+
 
 

@@ -4,6 +4,7 @@ import Input from '../atoms/input/Input';
 
 const SearchInput = () => {
   return (
+    //InputコンポーネントとPrimaryButtonコンポーネントから構成される検索バーの単位をmoleculesという
     <div>
       <SContainer>
         <Input placeholder="検索条件を入力" />

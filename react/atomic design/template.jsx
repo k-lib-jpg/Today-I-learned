@@ -1,0 +1,16 @@
+//templateとはカードが複数構成されたといった集合体のようなものを指す
+import Footer from '../atoms/layout/Footer';
+import Header from '../atoms/layout/Header';
+
+const DefaultLayout = (props) => {
+  const { children } = props;
+  return (
+    <>
+      <Header />
+      {children}
+      <Footer />
+    </>
+  );
+};
+
+export default DefaultLayout;

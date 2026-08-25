@@ -1,6 +1,6 @@
 //数値や文字列をenumを使うことでまとめることができる
 
-#数値列挙 enunm + 宣言したい変数
+#数値列挙 enum + 宣言したい変数
 enum ZeroOrOne {
   Zero = 0,
   One = 1,
